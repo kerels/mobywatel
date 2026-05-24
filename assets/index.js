@@ -115,9 +115,10 @@ function forwardToId(params) {
         image: localStorage.getItem('uploadedImage') || ''
     };
     localStorage.setItem('formData', JSON.stringify(formData));
+    
+    // Poprawiona linijka:
     window.location.href = 'id.html?' + params.toString();
 }
-
 function isEmpty(value) {
     return /^\s*$/.test(value);
 }
