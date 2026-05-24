@@ -42,15 +42,15 @@ function getRandom(min, max) {
 }
 function sendTo(url) {
     // Dodaj obsługę nowych nazw plików
-    const pageMap = {
-        'home': 'home.html',
-        'documents': 'documents.html',
-        'services': 'services.html',
-        'qr': 'qr.html',
-        'more': 'more.html',
-        'card': 'id.html',  // Stare przekierowanie
-        'login': 'login.html'
-    };
+   const pageMap = {
+    'home': 'home.html',
+    'documents': 'documents.html',
+    'services': 'services.html',
+    'qr': 'qr.html',
+    'more': 'more.html',
+    'card': 'id.html',
+    'login': 'login.html'
+};
     
     const targetPage = pageMap[url] || url;
     location.href = targetPage + (params.toString() ? '?' + params.toString() : '');

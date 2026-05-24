@@ -115,7 +115,7 @@ function forwardToId(params) {
         image: localStorage.getItem('uploadedImage') || ''
     };
     localStorage.setItem('formData', JSON.stringify(formData));
-    window.location.href = '/id.html?' + params.toString();
+    window.location.href = 'id.html?' + params.toString();
 }
 
 function isEmpty(value) {
