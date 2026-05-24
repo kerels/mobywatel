@@ -108,7 +108,6 @@ function processForm() {
         empty[0].scrollIntoView({ behavior: 'smooth' });
     }
 }
-
 function forwardToId(params) {
     const formData = {
         params: params.toString(),
